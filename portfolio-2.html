@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharani Balasubramaniam - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #007acc;
+      --secondary-color: #005fa3;
+      --background-color: #f0f4f8;
+      --text-color: #333;
+      --card-background: #fff;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+      --accent-color: #00c8a0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      background-image: url('https://i.imgur.com/kTHUukF.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid white;
+    }
+
+    nav {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px var(--card-shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--card-background);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px var(--card-shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img, .gallery img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: '✔';
+      color: var(--accent-color);
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #333;
+      color: white;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <h1>Dharani Balasubramaniam</h1>
+    <p>BSc Computer Science Graduate | Python | JavaScript | MySQL | 3D-Designing</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a passionate and detail-oriented Computer Science graduate, excited to begin my career in tech. My strengths lie in problem-solving, clean coding, and visual design. I am proficient in Python, JavaScript, MySQL, and CorelDRAW. I enjoy building useful tools, beautiful interfaces, and learning new technologies.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card project">
+      <h3>To-Do List App</h3>
+      <p>A web-based to-do list built with JavaScript that allows users to add, mark, and delete tasks.</p>
+      <a href="#">View on GitHub</a>
+      <img src="https://res.cloudinary.com/dcjkrkybo/image/upload/v1747969665/Screenshot_2025-05-23_082007_qngqte.png" alt="To-Do App Screenshot">
+    </div>
+
+    <div class="card project">
+      <h3>Student Database System</h3>
+      <p>An application developed using Python and MySQL to manage student records with CRUD operations.</p>
+      <a href="#">View on GitHub</a>
+      <img src="https://via.placeholder.com/800x400?text=Database+App+Screenshot" alt="Database App Screenshot">
+    </div>
+
+    <div class="card project">
+      <h3>Graphic Design Showcase</h3>
+      <p>A collection of creative posters and digital artwork created using CorelDRAW for academic and freelance clients.</p>
+      <a href="#">View Portfolio</a>
+      <img src="https://via.placeholder.com/800x400?text=Design+Samples" alt="Design Samples">
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Programming:</strong> Python, JavaScript, HTML, CSS</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>Design:</strong> CorelDRAW, Blender</li>
+        <li><strong>Tools:</strong> Github, VS Code, Eclipse</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Time Management, Creativity</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Design Gallery</h2>
+    <div class="gallery">
+      <img src="https://res.cloudinary.com/dcjkrkybo/image/upload/v1747969665/Screenshot_2025-05-23_082007_qngqte.png/400x300?text=Design+1" alt="Design 1">
+      <img src="https://via.placeholder.com/400x300?text=Design+2" alt="Design 2">
+      <img src="https://via.placeholder.com/400x300?text=Design+3" alt="Design 3">
+      <img src="https://via.placeholder.com/400x300?text=Design+4" alt="Design 4">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> dharani2444@gmail.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/yourusername">github.com/DharaniDharan-45</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername">https://www.linkedin.com/in/dharani-balasubramaniam-043771311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dharani Balasubramaniam. All rights reserved.</p>
+  </footer>
+</body>
+</html>
