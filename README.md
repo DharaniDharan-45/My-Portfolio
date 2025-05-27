@@ -4,7 +4,7 @@ This is a personal portfolio website built using **HTML**, **CSS**, **JavaScript
 
 🌐 Live Demo
 
-👉 [Visit Portfolio](https://DharaniDharan-45.github.io/My-Portfolio)  
+👉 [Visit Portfolio](https://github.com/DharaniDharan-45/My-Portfolio/blob/main/portfolio-2.html)  
 
 📌 Features
 
